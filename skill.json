@@ -1,0 +1,36 @@
+{
+  "name": "genpark-evm-flashloan-arbitrage-slippage-guard-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - EVM flash loan arbitrage price impact and DEX pool slippage guard protecting against MEV sandwich attacks.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "crypto",
+  "tags": [
+    "flashloan",
+    "mev-protection",
+    "slippage-guard",
+    "dex-arbitrage",
+    "defi-guard"
+  ],
+  "inputs": {
+    "pool_id": {
+      "type": "string"
+    },
+    "loan_amount_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "guard_evaluation_id": {
+      "type": "string"
+    },
+    "slippage_within_safe_bounds": {
+      "type": "boolean"
+    },
+    "sandwich_mev_exposure_risk": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
